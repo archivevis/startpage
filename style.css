@@ -1,0 +1,83 @@
+@font-face {
+  font-family:'Iosevka';
+  src: url('Iosevka.ttf');
+}
+
+body, html {
+  background-color: #bfbfbf;
+  color: black;
+  font-family: 'Iosevka', monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+}
+
+ul {
+  display:  table-cell;
+  padding: 10px 25px;
+  list-style-type: none;
+}
+
+ul > a {
+  font-weight: bold;
+}
+
+ul > a:hover {
+  color: #580e8b;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+ul > li > a:hover {
+  color: #580e8b;
+}
+
+img {
+  width: 125px;
+  float: right;
+}
+
+hr {
+  width: 87%;
+}
+
+#main {
+  width: 500px;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#search {
+  text-align: center;
+}
+
+form input[type="search"] {
+  background-color: #bfbfbf;
+  border: none;
+  font-family: 'Iosevka', monospace;
+}
+
+.header {
+  padding-left: 25px; 
+}
+
+.purple {
+  color: #580e8b;
+}
+
+.date {
+  text-align: center;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>hello, reese</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favi.gif"> 
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="header">
+        <h3>you got my heart working <span class="purple">overtime</span></h3>
+      </div>
+      
+      <hr><div class="date" id="date"></div>   
+      <nav>
+        <ul>
+          <a>SNS</a>
+          <br><br>
+          <li><a href="https://www.reddit.com">reddit</a></li>
+          <li><a href="https://instagr.am">insta</a></li>
+          <li><a href="https://twitter.com/G_I_DLE">twt: idle</a></li>
+        </ul>
+        <ul>
+          <a>work</a>
+          <br><br>
+          <li><a href="https://github.com/lessfelt">github</a></li>
+          <li><a href="https://learn.ontariotechu.ca">canvas</a></li>
+          <li><a href="https://mail.uoit.net">otmail</a></li>
+        </ul>
+        <ul>
+          <a>media</a>
+          <br><br>
+          <li><a href="https://youtu.be">youtube</a></li>
+          <li><a href="https://soundcloud.com">soundcloud</a></li>
+          <li><a href="https://open.spotify.com/">spotify</a></li>
+        </ul>
+        <img src="trust.png">
+      </nav>
+      
+      <br>
+      <div id="search">
+        <form action="https://www.google.com/search?q=" method="GET" autocomplete="off">
+        <input autofocus id="q" name="q" type="search" placeholder="search the web...">
+        </form>
+      </div>
+    </div>
+    
+    <script>
+      document.getElementById("date").innerHTML = updateClock();
+      
+      function updateClock() {
+        var current = new Date();
+        var days = ['日', '月', '火', '水', '木', '金', '土'];
+
+        var date = current.getFullYear()+'年'+(current.getMonth()+1)+'月'+current.getDate()+'日 ('+days[current.getDay()]+')';
+        var time = current.getHours()+':'+current.getMinutes()+':'+current.getSeconds();
+        var kyou = date + ' ' + time;
+
+        document.getElementById("date").innerHTML = kyou;
+        setTimeout(updateClock, 1000);
+      }
+      updateClock();
+    </script>
+    
+  </body>
+</html>
