@@ -74,6 +74,11 @@ form input[type="search"] {
   padding-left: 25px; 
 }
 
+.header > a {
+  text-decoration: none;
+  color: #580e8b;
+}
+
 .purple {
   color: #580e8b;
 }
