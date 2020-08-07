@@ -74,7 +74,7 @@ form input[type="search"] {
   padding-left: 25px; 
 }
 
-.header > h3 > a {
+a {
   text-decoration: none;
   color: #580e8b;
 }
