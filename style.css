@@ -23,17 +23,17 @@ ul {
   list-style-type: none;
 }
 
-ul a {
+ul > a {
   font-weight: bold;
-}
-
-ul a:hover {
-  color: #580e8b;
 }
 
 ul a {
   text-decoration: none;
   color: black;
+}
+
+ul a:hover {
+  color: #580e8b;
 }
 
 img {
@@ -72,6 +72,7 @@ form input[type="search"] {
 
 .header a {
   text-decoration: none;
+  color: #2b2b2b;
 }
 
 .header a:hover {
