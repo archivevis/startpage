@@ -3,66 +3,96 @@
   <head>
     <meta charset="utf-8">
     <title>hello, reese</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" href="favi.gif"> 
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="shortcut icon" href="img/favi.gif"> 
   </head>
 
   <body>
-    <div id="main">
-      <div class="header">
-        <h3>you got my heart working <span class="purple"><a href="https://www.youtube.com/watch?v=GnEmD17kYsE">overtime</a></span></h3>
+    <div id="container">
+      <!-- top part: links and stuff -->
+      <div id="main">
+        <!-- haha inverted i trust -->
+        <div class="left">
+          <img src="img/trust.png" alt="wing">
+        </div>
+
+        <div class="right">
+          <!-- big header thing -->
+          <h1>hello, reese!</h1>
+          <div class="date" id="date"></div>
+          <hr>
+          <!-- actually, the links, -->
+          <div id="nav">
+            <ul>
+              <h3>school</h3>
+              <li><a href="https://ontariotechu.ca/mycampus/">mycampus</a></li>
+              <li><a href="https://learn.ontariotechu.ca">canvas</a></li>
+              <li><a href="https://mail.uoit.net">otmail</a></li>
+              <li><a href="#?w=auto" rel="box1" class="poplight">lectures</a></li>
+            </ul>
+
+            <ul>
+              <h3>productivity</h3>
+              <li><a href="https://stackoverflow.com/">stackoverflow</a></li>
+              <li><a href="https://github.com/">github</a></li>
+              <li><a href="https://trello.com/en">trello</a></li>
+              <li><a href="https://mail.protonmail.com/login">protonmail</a></li>
+            </ul>
+
+            <ul>
+              <h3>languages</h3>
+              <li><a href="http://www.guidetojapanese.org/learn/">jp: grammar guide</a></li>
+              <li><a href="https://learnjapanesedaily.com/most-common-japanese-words.html">jp: 1000 words</a></li>
+              <li><a href="https://www.howtostudykorean.com/">kr: how to study</a></li>
+              <li><a href="https://www.reddit.com/r/Korean/comments/166zb8/update_korean_1000_most_common_words_anki_deck/">kr: 1000 words</a></li>
+            </ul>
+
+            <ul>
+              <h3>mech keys</h3>
+              <li><a href="https://mechgroupbuys.com/">mechgb</a></li>
+              <li><a href="https://keycaplendar.firebaseapp.com/">keycaplendar</a></li>
+              <li><a href="https://www.reddit.com/r/MechanicalKeyboards/">r/mechkeys</a></li>
+              <li><a href="https://geekhack.org/index.php">geekhack</a></li>
+            </ul>
+
+            <ul>
+              <h3>fun</h3>
+              <li><a href="https://twitter.com/">twitter</a></li>
+              <li><a href="https://youtube.com/">youtube</a></li>
+              <li><a href="https://twitch.tv/">twitch</a></li>
+              <li><a href="https://www.reddit.com/">reddit</a></li>
+            </ul>
+          </div>
+        </div>
+
       </div>
-      
-      <hr><div class="date" id="date"></div>   
-      <nav>
-        <ul>
-          <a>いつもの</a>
-          <br><br>
-          <li><a href="https://stackoverflow.com/">stackoverflow</a></li>
-          <li><a href="https://github.com/">github</a></li>
-          <li><a href="https://twitter.com/">twitter</a></li>
-        </ul>
-        <ul>
-          <a>学業</a>
-          <br><br>
-          <li><a href="https://ontariotechu.ca/mycampus/">mycampus</a></li>
-          <li><a href="https://learn.ontariotechu.ca">canvas</a></li>
-          <li><a href="https://mail.uoit.net">otmail</a></li>
-        </ul>
-        <ul>
-          <a>etc</a>
-          <br><br>
-          <li><a href="https://mechgroupbuys.com/">mechgb</a></li>
-          <li><a href="https://www.reddit.com">reddit</a></li>
-          <li><a href="https://trello.com/en">trello</a></li>
-        </ul>
-        <img src="trust.png">
-      </nav>
-      
-      <br>
+      <!-- bottom part: search bar -->
       <div id="search">
-        <form action="https://www.google.com/search?q=" method="GET" autocomplete="off">
-        <input autofocus id="q" name="q" type="search" placeholder="search the web...">
+        <form action="https://duckduckgo.com/" method="GET" autocomplete="off" target="_blank">
+        <input autofocus id="q" name="q" type="search" placeholder="search duckduckgo...">
         </form>
       </div>
     </div>
-    
-    <script>
-      document.getElementById("date").innerHTML = updateClock();
-      
-      function updateClock() {
-        var current = new Date();
-        var days = ['日', '月', '火', '水', '木', '金', '土'];
 
-        var date = current.getFullYear()+'年'+(current.getMonth()+1)+'月'+current.getDate()+'日 ('+days[current.getDay()]+')';
-        var time = current.getHours()+':'+current.getMinutes()+':'+current.getSeconds();
-        var kyou = date + ' ' + time;
+    <script src="scripts/datetime.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+    <script src="scripts/popup.js"></script>
 
-        document.getElementById("date").innerHTML = kyou;
-        setTimeout(updateClock, 1000);
-      }
-      updateClock();
-    </script>
-    
+  <!-- on "lecture" click: lectures hub -->
+  <div id="box1" class="popup_block">
+    <ul>
+      <h3>lectures</h3>
+      <li><a href="https://meet.google.com/">sarny</a></li>
+      <li><a href="https://meet.google.com/">warny</a></li>
+      <li><a href="https://meet.google.com/">nyarny</a></li>
+    </ul>
+    <ul>
+      <h3>tuts/labs</h3>
+      <li><a href="https://meet.google.com/">nyarny</a></li>
+      <li><a href="https://meet.google.com/">warny</a></li>
+      <li><a href="https://meet.google.com/">sarny</a></li>
+    </ul>
+  </div>
+
   </body>
 </html>

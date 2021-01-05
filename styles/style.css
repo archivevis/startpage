@@ -1,0 +1,123 @@
+@font-face {
+  font-family:'Iosevka';
+  src: url('/fonts/iosevka.woff2') format('woff2'), url('/fonts/iosevka.woff') format('woff'), url('/fonts/iosevka.ttf') format('truetype');
+}
+
+:root {
+  --black: #1a1a1a;
+  --white: #ffffff;
+  --grey: #d4d4d4;
+  --dark-grey: #666666;
+}
+
+body, html {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Iosevka', monospace;
+}
+
+h3 {
+  color: var(--dark-grey);
+}
+
+
+#container {
+  width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+}
+
+#search {
+  margin-top: 10px;
+  float: left;
+}
+
+#nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  vertical-align: top;
+  text-align: center;
+}
+
+#nav ul {
+  display: table-cell;
+  padding: 5px 15px;
+  list-style-type: none;
+}
+
+#nav ul a {
+  color:var(--white);
+  text-decoration: none;
+}
+
+#nav ul a:visited {
+  color:var(--white);
+  text-decoration: none;
+}
+
+.left img{
+  width: 250px;
+  margin-right: 20px;
+}
+
+form input[type="search"] {
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  font-family: 'Iosevka', monospace;
+}
+
+
+/* for pop ups */
+.popup_block {
+  display: none;
+  color: var(--white);
+  background: var(--black); 
+  border: 1px solid var(--white); 
+  float: left;
+  position: fixed;
+    top: 50%;
+    left: 50%;
+  z-index: 99999;
+}
+
+.popup_block ul {
+  text-align: center;
+  display: table-cell;
+  padding: 15px 15px;
+  list-style-type: none;
+}
+
+.popup_block ul a {
+  color:var(--white);
+  text-decoration: none;
+}
+
+.popup_block ul a:visited {
+  color:var(--white);
+  text-decoration: none;
+}
+   
+#fade {
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: var(--black);
+  opacity: 0.7; 
+}
+  
+*html #fade {position: absolute;}
+*html .popup_block {position: absolute;}
