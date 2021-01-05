@@ -4,5 +4,5 @@
  [check it out, however there's no popup](https://kiryu-coco.github.io/startpage/)
 
 # previews
- ![preview - main site](https://github.com/kiryu-coco/startpage/preview/mainpage.png)
- ![preview - popup](https://github.com/kiryu-coco/startpage/preview/popup.png)
+ ![preview - main site](https://github.com/kiryu-coco/startpage/blob/master/preview/mainpage.png)
+ ![preview - popup](https://github.com/kiryu-coco/startpage/blob/master/preview/popup.png)
