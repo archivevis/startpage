@@ -2,6 +2,7 @@
  a startpage meant for me. best used in firefox.
  i'd recommend you NOT host this startpage on github sites if you want the popup thingy :3
  popup.js is from [a tumblr tutorial](https://painthemes.tumblr.com/pop)
+ 
  [check it out, however there's no popup](https://kiryu-coco.github.io/startpage/)
 
 # previews
