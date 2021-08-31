@@ -1,10 +1,2 @@
 # startpage
- a startpage meant for me. best used in firefox.
- i'd recommend you NOT host this startpage on github sites if you want the popup thingy :3
- popup.js is from [a tumblr tutorial](https://painthemes.tumblr.com/pop)
- 
- [check it out, however there's no popup](https://kiryu-coco.github.io/startpage/)
-
-# previews
- ![preview - main site](https://github.com/kiryu-coco/startpage/blob/master/preview/mainpage.png)
- ![preview - popup](https://github.com/kiryu-coco/startpage/blob/master/preview/popup.png)
+hi this thing is severely out of date, i ended up making a terminal-like one with more experience [right here](https://gitlab.com/rissu/startpage)
